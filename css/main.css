@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Merriweather:300,400,700,900');
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*MOBILE VIEW*/
+body {
+    line-height: 1.618;
+    font-size: 0.618rem;
+}
+
+h1 {
+    clear: both;
+    font-family: lato;
+    font-weight: 700;
+    text-align: center;
+}
+
+ul, button, .end {
+    font-family: merriweather;
+    font-weight: 400;
+}
+
+nav ul {
+    text-align:center; 
+    padding: 0;
+}
+
+nav ul li {
+    display: block;
+    list-style: none;
+    background-color: #685CFF;
+    border: 1px solid black;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+    font-family: lato;
+    font-size: 1.7em;
+}
+
+.social ul {
+    text-align:center; 
+    padding: 0;
+}
+
+.social ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social ul li a {
+    color: black;
+    text-decoration: none;
+    margin: 10px;
+}
+
+main ul {
+    text-align: center;
+    margin: 5px 5px 5px -25px;
+}
+
+main li {
+    display: inline-block;
+    margin: 5px;
+}
+
+.btn {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#active {
+    color: #3BE85A;
+}
+
+footer {
+    background-color: #87AFE8;
+}
+
+.banner {
+    background-color: #4AEEFF;
+}
+
+.banner figcaption {
+    text-align: center;
+}
+
+.end {
+    text-align: center;
+}
+
+/*js stuff*/
+.mh-image img{
+    max-width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0 auto;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    margin: 5px;
+}
+
+span {
+    font-size: 0;  
+}
+
+span::before {
+    font-family: FontAwesome;
+    font-size: 30px;
+    display: inline-block;
+}
+
+span.btn1::before {
+    content: '\f0e7';
+}
+
+span.btn2::before  {
+    content: '\f185';
+}
+
+span.btn3::before  {
+    content: '\f0fb';
+}
+
+
+
+/*TABLET VIEW*/
+@media all and (min-width: 32rem) {
+    body {
+        font-size: 1rem;
+    }
+
+    nav ul li {
+        display: inline-block;
+        margin: 0 10px 0 10px;
+    }
+
+    nav ul li a {
+        margin: 15px;
+    }
+    
+    main figure {
+        width: 90%;
+        float: right;
+    }
+    
+    main figure img {
+        margin: 0 1rem 1rem 0;
+        width: calc(30% - 1rem + 0.5rem);
+        float: left;
+    }
+    main figure figcaption {
+        float: right;
+        text-align: left;
+        width: calc(70% - 1rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+    
+    main ul {
+        width: 10%;
+        float: left;
+        display: inherit;
+    }
+    
+    main li {
+        float: inherit;
+    }
+    
+    .container {
+        float: right;
+        width: 80%;
+    }
+}
+
+/*DESKTOP VIEW*/
+@media all and (min-width: 60rem) {
+    body {
+        font: 1.618rem;
+    }
+    
+    .mh-image figcaption {
+        text-align: center;
+    }
+    
+        main figure img {
+        margin: 0 1rem 1rem 0;
+        width: calc(50% - 1rem + 0.5rem);
+        float: left;
+    }
+    
+    main figure figcaption {
+        float: right;
+        text-align: center;
+        width: calc(50% - 1rem + 0.5rem);
+        line-height: 1.6rem;
+    }
+    
+    main ul {
+        width: 100%;
+        text-align: center;
+        margin: 5px 5px 5px -25px;
+    }
+
+    main li {
+        display: inline-block;
+        margin: 5px;
+    }
+    
+    .mh-image img {
+        display: block;
+    }
+    
+    main ul {
+        width: 10%;
+        float: left;
+        display: inherit;
+    }
+    
+    main li {
+        float: none;
+        display: block;
+    }
+    
+    .container {
+        float: right;
+        width: 85%;
+    }
+    
+    nav ul {
+        text-align: left;
+    }
+    
+}
